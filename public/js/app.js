@@ -15,7 +15,6 @@ weatherForm.addEventListener('submit', (event) => {
 
     const search = document.querySelector('input')
     const location = search.value
-    const port = process.env.port || 3000;
 
     const url = '/weather?address=' + location
 
