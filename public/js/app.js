@@ -15,8 +15,9 @@ weatherForm.addEventListener('submit', (event) => {
 
     const search = document.querySelector('input')
     const location = search.value
+    const port = process.env.port || 3000;
 
-    const url = '/weather?address=' + location
+    const url = 'http://localhost:3000/weather?address=' + location
 
     fetch(url).then((response,) => {
         response.json().then((data) => {
