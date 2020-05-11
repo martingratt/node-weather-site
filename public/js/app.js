@@ -1,6 +1,5 @@
 console.log('Javascript File is loaded!')
 
-const url = 'http://puzzle.mead.io/puzzle'
 const weatherForm = document.querySelector('form')
 const message1 = document.querySelector('#message-1')
 const message2 = document.querySelector('#message-2')
@@ -15,11 +14,10 @@ weatherForm.addEventListener('submit', (event) => {
 
     const search = document.querySelector('input')
     const location = search.value
-    const port = process.env.port || 3000;
+    //const url1 = 'http://localhost:3000/weather?address=' + location
+    const url2 = '/weather?address=' + location
 
-    const url = '/weather?address=' + location
-
-    fetch('/weather?address=' + location).then((response,) => {
+    fetch(url2).then((response,) => {
         response.json().then((data) => {
 
             if (data.error) {
