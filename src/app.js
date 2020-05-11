@@ -97,6 +97,6 @@ app.get('*', (req, res) => {
     })
 });
 
-app.listen(port, () => {
+app.listen(3000, () => {
     console.log('Webserver is running on ' + port)
 });
