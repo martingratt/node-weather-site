@@ -23,7 +23,10 @@ const forecast = (lat, long, callback) => {
 
 
 
-            callback(undefined, 'It is ' + temperature + ' degress out there, it feels like ' +  feelslike + ' and you can describe it ' +weatherDescriptions + '. The humidity is ' + humidity + '% and the windspeed is ' + windSpeed + ' km/h'
+            callback(
+                undefined,
+                'It is ' + temperature + ' degress out there, it feels like ' +  feelslike + ' and you can describe it ' +weatherDescriptions +
+                '. The humidity is ' + humidity + '% and the windspeed is ' + windSpeed + ' km/h'
                 /*
                     temperature: temperature,
                     feelslike: feelslike,
